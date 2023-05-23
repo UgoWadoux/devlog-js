@@ -3,52 +3,52 @@
     <head>
         <meta charset="utf-8">
     </head>
-    <body>
-
+    <body>  
+        
         <h1>Exercice 0</h1>
-
+<!-- début du javascript -->
         <script type="text/javascript">
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe";// declaration d'une variable nommée name qui prend comme valeur la chaine de caractère "Joe"
+        var city = 'London';// declaration d'une variable nommée city qui prend comme valeur la chaine de caractère "London"
+        var age = 32;// declaration d'une variable nommée age qui prend comme valeur l'entier 38
+        var isRed = true;// declaration d'une variable nommée isRed qui prend comme valeur le boolean true
+        var isOld = age > 80;// declaration d'une variable nommée is0ld qui compare la variable age à 80, si age est supérieur à 80 il renvoie un boolean true sinon false
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];// création d'un tableau nommé previousJob, qui pren en index 0 la chaine de caractère "lawyer", en index 1 "developper", en index 2 "Professionnal climber"
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        function info(height, weight) {// création d'une fonction  info qui prend en paramètre une variable height et une variable weight
+            if (height > 180) {// mise en place d'une condition qui s'execute si la variable height est supérieur à 180
+                console.log('Vous êtes grand');// Affiche dans la console "Vous êtes grand"
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) {//mise en place d'une  condition qui s'execute si la variable weight est inférieur à 0
+                console.log('oups, there is a problem');// Affiche dans la console "oups, there is a problem" 
+            } else if ( weight < 15) { //mise en place d'une  condition qui s'execute si la variable weight est supérier à 0 mais inférieur à 15
+                console.log('Are you that slim ?')// Affiche dans la console "Are you that slim ?" 
+            } else {//mise en place d'une  condition qui s'execute dans tous les autres cas en l'occurance quand weight est supérieur à 15
+                console.log('Good !')// Affiche dans la console "Good !"
             }
+        }// fin de la fonction
+
+        info(165, 45);// execution de la fonction info avec les paramètre 165 et 45
+
+        var myHeight = 175;// déclaration d'une variable nommée myHeight uqui prend comme valeur l'entier 175
+        var myWeight = 86;// déclaration d'une variable nommée myWeight uqui prend comme valeur l'entier 86
+
+        info(myHeight, myWeight);// execution de la fonction info avec en paramètre la variable myHeight et la variable my Weight
+
+        info(myHeight + 15, myWeight - 100);// execution de la fonction info avec en paramètre la variable myHeight+15( cela nous donne 175+15=190) et la variable myWeight-100 (cela nous donne 86-100=-14)
+
+        function toUpper(variable) { // création d'une fonction nommée to Upper qui prend en paramètre une variable  nommée variable
+            return variable.toUpperCase();// renvoie la variable en majuscule 
         }
 
-        info(165, 45);
+        var upperName = toUpper(name); //création d'une variable upperName qui prend comme valeur la fonction toUpper qui a en paramètre la variable name. Cela renvoie la variable name en majuscule 
 
-        var myHeight = 175;
-        var myWeight = 86;
-
-        info(myHeight, myWeight);
-
-        info(myHeight + 15, myWeight - 100);
-
-        function toUpper(variable) {
-            return variable.toUpperCase();
-        }
-
-        var upperName = toUpper(name);
-
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { //création d"une boucle for, qui prend en paramètre i=0 tanque qui est inférieur à 3, i=i+1 ce qui veut dire que i augmente de 1 en 1
+            console.log(previousJobs[i]);// affiche la valeur de previousJob avec i en index, nous allons donc avoir : la valeur de previousJob à l'index 0,1,2
         }
 
         /* Section 2: */
@@ -57,11 +57,16 @@
 
         // afficher si Joe est roux ou pas.
 
+        console.log('La ville de Joe est:',city);
+        console.log('Joe est roux :', isRed)
+
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
 
-        </script>
-
+        </script> 
+<!-- fin du javascript -->
     </body>
+<!-- fin du body      -->
 </html>
+<!-- fin de l'html  -->

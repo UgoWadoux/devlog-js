@@ -27,3 +27,5 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+
+Une erreur apparait dans la console car on lui demande d'afficher myVariable or celle-ci n'existe pas 
